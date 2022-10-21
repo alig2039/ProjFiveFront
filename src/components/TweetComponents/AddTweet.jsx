@@ -88,7 +88,7 @@ const AddTweet = () => {
             onChange={(e) => setTweetInput(e.target.value)}
             cols="50"
             className="addTweetTitle"
-            placeholder=" What's happening ?"
+            placeholder=" What's Up?"
           ></textarea>
 
           {tweetInput && (
@@ -160,31 +160,7 @@ const AddTweet = () => {
                   className="side-icon"
                 >
                   <AiOutlineSmile onClick={() => setShowEmoji(!showEmoji)} />
-                </li>
-                <li
-                  data-toggle="tooltip"
-                  title="Add Bar"
-                  data-placement="bottom"
-                  className={`side-icon ${PrevImage && "disabled"}`}
-                >
-                  <AiOutlineBarChart />
-                </li>
-                <li
-                  data-toggle="tooltip"
-                  title="Add Gif"
-                  data-placement="bottom"
-                  className={`side-icon ${PrevImage && "disabled"}`}
-                >
-                  <AiOutlineGif />
-                </li>
-                <li
-                  data-toggle="tooltip"
-                  title="Add Schedule"
-                  data-placement="bottom"
-                  className={`side-icon ${PrevImage && "disabled"}`}
-                >
-                  <AiOutlineSchedule />
-                </li>
+                </li>                
               </div>
 
               <button
@@ -195,7 +171,7 @@ const AddTweet = () => {
                 {uploading ? (
                   <ClipLoader color="white" loading={true} size={16} />
                 ) : (
-                  "Tweet"
+                  "Squawk"
                 )}
               </button>
             </ul>

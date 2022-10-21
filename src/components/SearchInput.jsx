@@ -33,7 +33,7 @@ const SearchInput = () => {
         type="text"
         className="searchinput"
         id="search-bar"
-        placeholder="Search Twitter"
+        placeholder="Search CupCake"
       />
       {searchResult.length > 0 && (
         <div className="resultDiv">

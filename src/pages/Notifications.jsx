@@ -66,7 +66,7 @@ const Notifications = () => {
                 list={list}
                 tweet={list.tweet}
                 icon={<AiFillHeart color="rgb(235, 58, 91)" />}
-                type=" loved  your tweet "
+                type=" loved  your squawk "
                 link={`${list.to_user}/tweet/${list.tweet.id}`}
               />
             )}
@@ -76,7 +76,7 @@ const Notifications = () => {
                 list={list}
                 tweet={list.tweet}
                 icon={<AiOutlineComment color="lightblue" />}
-                type=" replied  your tweet "
+                type=" replied  your squawk "
                 link={`${list.to_user}/tweet/${list.tweet.id}`}
               />
             )}
@@ -96,7 +96,7 @@ const Notifications = () => {
                 tweet={list.tweet}
                 comment={list.comment}
                 icon={<AiOutlineRetweet color="lightgreen" />}
-                type=" retweeted your comment"
+                type=" resquawked your comment"
                 link={`${list.to_user}/tweet/${list.tweet.id}`}
               />
             )}

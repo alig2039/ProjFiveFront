@@ -40,7 +40,7 @@ const TweetPostCard = ({ tweet, dispatch, user }) => {
                 {tweet?.author.username === user?.username
                   ? "You "
                   : tweet.author.username}{" "}
-                retweeted !
+                resquarked !
               </Link>
             </strong>
 

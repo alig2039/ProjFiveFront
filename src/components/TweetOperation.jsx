@@ -137,7 +137,7 @@ export const TweetOperation = ({
         {NoRetweetMark ? null : retweet ? (
           <i
             data-toggle="tooltip"
-            title="Remove reTweet"
+            title="Remove reSquawk"
             className="tweetIcons"
           >
             <AiOutlineRetweet
@@ -146,7 +146,7 @@ export const TweetOperation = ({
             />
           </i>
         ) : (
-          <i data-toggle="tooltip" title="Re- Tweet" className="tweetIcons">
+          <i data-toggle="tooltip" title="Re-Squawk" className="tweetIcons">
             <AiOutlineRetweet onClick={() => sendReTweet(id)} />
           </i>
         )}
@@ -161,25 +161,7 @@ export const TweetOperation = ({
           {oriId ? "" : <span className="count">{like_count}</span>}
           {/* <span className="count">{like_count}</span> */}
         </i>
-        {NoRetweetMark ? null : bookmarked ? (
-          <i
-            data-html="true"
-            data-toggle="tooltip"
-            title="Bookmark"
-            data-placement="up"
-            className="tweetIcons pointer"
-          >
-            <FiShare color="lightgreen" onClick={() => onBookmark(id)} />
-          </i>
-        ) : (
-          <i
-            data-toggle="tooltip"
-            title="Bookmark!"
-            className="tweetIcons pointer"
-          >
-            <FiShare onClick={() => onBookmark(id)} />
-          </i>
-        )}
+        
       </div>
     );
   } else {
@@ -188,7 +170,7 @@ export const TweetOperation = ({
         <i data-toggle="tooltip" title="Add Reply" className="tweetIcons">
           <AiOutlineComment onClick={alertToLog} />
         </i>
-        <i data-toggle="tooltip" title=" reTweet" className="tweetIcons">
+        <i data-toggle="tooltip" title=" reSquawk" className="tweetIcons">
           <AiOutlineRetweet onClick={alertToLog} />
         </i>
         <i className="tweetIcons heart-parent">
@@ -196,15 +178,7 @@ export const TweetOperation = ({
 
           <span className="count">{like_count}</span>
         </i>
-        <i
-          data-html="true"
-          data-toggle="tooltip"
-          title="Bookmark"
-          data-placement="up"
-          className="tweetIcons pointer"
-        >
-          <FiShare onClick={alertToLog} />
-        </i>
+        
       </div>
     );
   }

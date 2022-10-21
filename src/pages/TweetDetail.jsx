@@ -174,7 +174,7 @@ const TweetDetail = () => {
                   value={commentInput}
                   onChange={(e) => setCommentInput(e.target.value)}
                   className="commentInput"
-                  placeholder="Tweet your Reply"
+                  placeholder="What's your Reply?"
                 ></textarea>
 
                 <AddPicker setInput={setCommentInput} />

@@ -83,14 +83,6 @@ const Sidebar = () => {
               <span className="link-text">Home</span>
             </NavLink>
           </li>
-          <li>
-            <Link to="/explore">
-              <i>
-                <BiHash />
-              </i>
-              <span className="link-text">Explore</span>
-            </Link>
-          </li>
           <li className="notify-div">
             <Link to="/notifications">
               {noticeCount && <div className="notify-count">{noticeCount}</div>}
@@ -111,14 +103,6 @@ const Sidebar = () => {
               </Link>
             </li>
           )}
-          <li>
-            <Link to="/bookmark">
-              <i>
-                <BiBookmark />
-              </i>
-              <span className="link-text">Bookmarks</span>
-            </Link>
-          </li>
           {isAuthenticated && (
             <li>
               <Link to={(user && `/${user.username}`) || "profile"}>
