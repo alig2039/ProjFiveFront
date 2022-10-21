@@ -17,7 +17,9 @@ import {
 } from "../slices/tweetSlice";
 import { setSearch } from "../slices/NotificationSlice";
 // check is localstorage for access is present or not
-const url = process.env.REACT_APP_DOMAIN;
+//const url = process.env.REACT_APP_DOMAIN;
+const url = 'http://127.0.0.1:8000/';
+
 export const load_tweet = () => async (dispatch) => {
   dispatch(setLoading(true));
 

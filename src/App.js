@@ -26,7 +26,8 @@ function App() {
   const dispatch = useDispatch();
   const noticeInfo = useSelector((state) => state.notificationReducer);
   const message = noticeInfo.message;
-  let endpoint = `${process.env.REACT_APP_WS_DOMAIN}ws/home/`;
+  //let endpoint = `${process.env.REACT_APP_WS_DOMAIN}ws/home/`;
+  let endpoint = `http://127.0.0.1:8000/ws/home/`;
   let client;
 
   function websocketCon() {

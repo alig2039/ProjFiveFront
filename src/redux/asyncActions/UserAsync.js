@@ -19,7 +19,8 @@ import {
 import { setMessage } from "../slices/tweetSlice";
 import axios from "axios";
 import { axiosInstance } from "../../index";
-const url = process.env.REACT_APP_DOMAIN;
+//const url = process.env.REACT_APP_DOMAIN;
+const url = 'http://127.0.0.1:8000/';
 
 export const load_user = () => async (dispatch) => {
   if (localStorage.getItem("access")) {

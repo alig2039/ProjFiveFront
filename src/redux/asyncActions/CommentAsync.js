@@ -13,7 +13,8 @@ import {
 import { axiosInstance } from "../../index";
 import { setMessage } from "../slices/tweetSlice";
 import axios from "axios";
-const url = process.env.REACT_APP_DOMAIN;
+//const url = process.env.REACT_APP_DOMAIN;
+const url = 'http://127.0.0.1:8000/';
 
 
 export const tweet_comments = (id) => async (dispatch) => {

@@ -7,8 +7,8 @@ import reportWebVitals from "./reportWebVitals";
 import axios from "axios";
 import { Provider } from "react-redux";
 import store from "./redux/store";
-const baseURL = process.env.REACT_APP_DOMAIN
-
+//const baseURL = process.env.REACT_APP_DOMAIN
+const baseURL = 'http://127.0.0.1:8000/'
 
 export const axiosInstance = axios.create({
   baseURL: baseURL,
