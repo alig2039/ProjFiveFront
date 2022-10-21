@@ -35,7 +35,7 @@ const Register = () => {
       <i style={{ fontSize: 40 }}>
         <RiTwitterFill color="#1da1f2" />
       </i>
-      <h2 className="heading">Register In Twitter</h2>
+      <h2 className="heading">Register</h2>
       {user.message && (
         <AlertMessage
           removeMesage={removeMesage}

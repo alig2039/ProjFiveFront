@@ -5,6 +5,7 @@ import { showSidebar } from "../redux/slices/simpleState";
 import {
   RiHome7Fill,
   RiTwitterFill,
+  RiCake3Fill,
   RiMailLine,
   RiGithubFill,
 } from "react-icons/ri";
@@ -49,9 +50,7 @@ const Sidebar = () => {
     }
   };
   const { user, isAuthenticated } = userIn;
-  const goOut = () => {
-    window.location.href = "http://github.com/learningnoobi/twitter-react";
-  };
+  
   return (
     <>
       {message && (
@@ -66,7 +65,7 @@ const Sidebar = () => {
           <li>
             <Link to="/">
               <i>
-                <RiTwitterFill />
+                <RiCake3Fill />
               </i>
             </Link>
             <span
@@ -130,13 +129,6 @@ const Sidebar = () => {
               </Link>
             </li>
           )}
-
-          <li style={{ cursor: "pointer" }} className="ml-2 p-1">
-            <i onClick={goOut}>
-              <RiGithubFill />
-            </i>
-            <span className="link-text">GitHub</span>
-          </li>
 
           <li>
             {isAuthenticated ? (
